@@ -1,9 +1,6 @@
 package com.example;
 
-import com.example.scope.AppConfig;
-import com.example.scope.Employee;
-import com.example.scope.PrototypeScope;
-import com.example.scope.SingletonScope;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -26,25 +23,6 @@ public class JavaPracticeApplication {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 
 		ApplicationContext context = SpringApplication.run(JavaPracticeApplication.class, args);
-		System.out.println("========Application context Loaded==========");
-		PrototypeScope bean = context.getBean(PrototypeScope.class);
-		System.out.println("=====PrototypeScope class loaded======");
-		((org.springframework.context.ConfigurableApplicationContext) context).close();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 	}
