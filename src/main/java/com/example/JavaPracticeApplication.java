@@ -23,6 +23,7 @@ public class JavaPracticeApplication {
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 
 		ApplicationContext context = SpringApplication.run(JavaPracticeApplication.class, args);
+		System.out.println("This is main");
 
 
 	}
